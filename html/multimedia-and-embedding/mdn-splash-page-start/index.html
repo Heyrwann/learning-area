@@ -13,7 +13,7 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-      <img src="originals/firefox-addons120.png" alt="logo firefox">
+      <img src="originals/firefox_logo-only_RGB120.png" alt="logo firefox">
 
     </header>
 
@@ -34,38 +34,33 @@
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img
-            srcset=""
-            sizes=""
-            src="originals/"
-            alt=""
-          >
+          srcset="originals/firefox_logo-only_RGB400.png 400w, originals/firefox_logo-only_RGB120.png 120w"
+          sizes="(max-width: 480px) 120px, 400px"
+          src="originals/firefox_logo-only_RGB400.png"
+          alt="logo firefox" 
+          />
         </a>
 
         <a href="https://www.mozilla.org/">
           <img
-            srcset=""
-            sizes=""
-            src=""
-            alt=""
+            srcset="originals/mozilla-dinosaur-head400.png 400w, originals/mozilla-dinosaur-head120.png 120w"
+            sizes="(max-width: 480px) 120px, 400px"
+            src="originals/mozilla-dinosaur-head400.png"
+            alt="logo dinosaure Mozilla"
           >
         </a>
 
         <a href="https://addons.mozilla.org/">
           <img
-            srcset=""
-            sizes=""
-            src="originals/firefox_logo-only_RGB400.png"
-            alt=""
+            srcset="originals/firefox-addons400.jpg 400w, originals/firefox-addons120.jpg 120w"
+            sizes="(max-width: 480px) 120px, 400px"
+            src="originals/firefox-addons400.jpg"
+            alt="logo addon mozilla"
           >
         </a>
 
         <a href="https://developer.mozilla.org/en-US/">
-          <img
-            srcset=""
-            sizes=""
-            src=""
-            alt=""
-          >
+          <img  src="originals/mdn.svg" role="img" alt="logo developer Mozilla">
         </a>
 
         <div class="clearfix"></div>
@@ -73,8 +68,14 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
-      </div>
 
+        <picture>
+          <source media="(max-width: 600px)" srcset="originals/red-panda_crop600.jpg" />
+          <img
+            src="originals/red-panda1200.jpg"
+            alt="Panda roux" />
+        </picture>
+      </div>
     </main>
   </body>
 </html>
