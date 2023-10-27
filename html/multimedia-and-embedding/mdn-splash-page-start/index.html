@@ -5,108 +5,23 @@
     <meta name="viewport" content="width=device-width">
     <title>Mozilla splash page</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <style>
-      /* header and body setup */
-
-      html {
-        font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
-      }
-
-      body {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-      }
-
-      /* Header styling */
-
-      header {
-        height: 150px;
-      }
-
-      header img {
-        width: 100px;
-        position: absolute;
-        right: 32.5px;
-        top: 32.5px;
-      }
-
-      h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-      }
-
-      /* main section and video styling */
-
-      main {
-        background: #ccc;
-      }
-
-      article {
-        padding: 20px;
-      }
-
-      h2 {
-        margin-top: 0;
-      }
-
-      p {
-        line-height: 2;
-      }
-
-      iframe {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 100%;
-      }
-
-      /* further info links */
-
-      .further-info {
-        clear: left;
-        padding: 40px 0;
-        background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
-      }
-
-      .further-info a {
-        width: 25%;
-        display: block;
-        float: left;
-      }
-
-      .further-info img {
-        max-width: 100%;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      /* Red panda image */
-
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="originals/mdn.svg" type="image/svg" />
   </head>
   <body>
     <header>
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
+      <img src="originals/firefox-addons120.png" alt="logo firefox">
 
     </header>
 
     <main>
       <article>
         <!-- insert iframe from youtube -->
+        
+        <iframe width="400" src="https://www.youtube.com/embed/ojcNcvb1olg?si=idNUvhDI55XkBGFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -118,17 +33,41 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+            srcset=""
+            sizes=""
+            src="originals/"
+            alt=""
+          >
         </a>
+
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+            srcset=""
+            sizes=""
+            src=""
+            alt=""
+          >
         </a>
+
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img
+            srcset=""
+            sizes=""
+            src="originals/firefox_logo-only_RGB400.png"
+            alt=""
+          >
         </a>
+
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img
+            srcset=""
+            sizes=""
+            src=""
+            alt=""
+          >
         </a>
+
         <div class="clearfix"></div>
       </div>
 
